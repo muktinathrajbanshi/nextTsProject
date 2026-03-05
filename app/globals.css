@@ -76,3 +76,37 @@ nav a {
   transition: 0.3s;
   border: 1px solid transparent;
 }
+
+
+nav a:hover {
+  border: 1px solid var(--neon);
+  box-shadow: 0 0 10px var(--neon);
+  color: var(--neon);
+}
+
+
+nav a.active {
+  background: linear-gradient(90deg, var(--neon), var(--purple));
+  color: #000;
+  font-weight: 600;
+  border: 1px solid transparent;
+  box-shadow: 0 0 15px var(--neon);
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  outline: none;
+}
+
