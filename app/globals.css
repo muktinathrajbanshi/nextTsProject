@@ -38,3 +38,41 @@ main {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   animation: float 6s ease-in-out infinite;
 }
+
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--neon), var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
