@@ -2,10 +2,10 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      <h1>Hello Madam is every</h1>
-    </div>
-  )
+    <main>
+      <h2>TODO NEXT + TYPESCRIPT</h2>
+    </main>
+  );
 }
 
 export default page
