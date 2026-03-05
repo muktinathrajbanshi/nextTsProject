@@ -7,6 +7,6 @@ const page = () => {
       <AddTodo />
     </main>
   );
-}
+};
 
-export default page
+export default page;
