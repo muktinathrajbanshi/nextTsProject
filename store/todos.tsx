@@ -11,20 +11,28 @@ export const todosContext = createContext(null);
 
 export const TodosProvider = (children: {children:ReactNode}) => {
 
-    const [todos, setTodos] = useState();
+    const [todos, setTodos] = useState<Todo[]>([]);
 
     const handleAddTodo = (task: string) => {
 
         setTodos((prev) => {
-            const newTodos: Todo[] = {
+            const newTodos: Todo[] = [
+                {
                 id: Math.random().toString(),
                 task,
                 complete: false,
                 createdAt: new Date()
-            }
+            },
             ...prev
-        })
+        ]}
+    )
         return newTodos;
 
     }
+
+    return (
+        <todosContext.Provider value={{todos, handleAddTodo}}>
+            {children}
+        </todosContext.Provider>
+    )
 }
