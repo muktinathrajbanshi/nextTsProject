@@ -189,3 +189,23 @@ li input:checked + label {
   text-decoration: line-through;
   color: #aaa;
 }
+
+
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  form input {
+    padding: 10px 12px;
+  }
+
+  form button {
+    padding: 10px;
+  }
+}

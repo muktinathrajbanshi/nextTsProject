@@ -6,6 +6,8 @@ const AddTodo = () => {
 
     const [todo, setTodo] = useState("")
 
+    const {handleAddTodo} = useTodos();
+
     
     const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
