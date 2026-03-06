@@ -12,7 +12,7 @@ export type TodosContext = {
     handleAddTodo: (task: string) => void; // call signature
 }
 
-export const todosContext = createContext(null);
+export const todosContext = createContext<TodosContext | null>(null);
 
 export const TodosProvider = (children: {children:ReactNode}) => {
 
