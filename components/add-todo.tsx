@@ -6,8 +6,16 @@ const AddTodo = () => {
 
     const [todo, setTodo] = useState("")
 
+    
+    const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      handleAddTodo(todo);
+      setTodo("");
+
+    }
+
   return (
-    <form>
+    <form onSubmit={handleFormSubmit}>
       <input type="text" name="" id="" placeholder="Write your todo" value={todo} onChange={(e) => setTodo(e.target.value)} />
       <button type="submit"> ADD </button>
     </form>
