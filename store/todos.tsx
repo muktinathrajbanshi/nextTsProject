@@ -9,7 +9,7 @@ export type Todo = {
 
 export type TodosContext = {
     todos: Todo[];
-    handleAddTodo = (task: string) => void // call signature
+    handleAddTodo: (task: string) => void; // call signature
 }
 
 export const todosContext = createContext(null);
@@ -29,11 +29,11 @@ export const TodosProvider = (children: {children:ReactNode}) => {
                 createdAt: new Date()
             },
             ...prev
-        ]}
-    )
+        ]
+        
         return newTodos;
-
-    }
+        }
+    )
 
     return (
         <todosContext.Provider value={{todos, handleAddTodo}}>
