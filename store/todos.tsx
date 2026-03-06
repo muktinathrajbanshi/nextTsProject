@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 
 export type Todo = {
     id: string;
@@ -40,4 +40,14 @@ export const TodosProvider = (children: {children:ReactNode}) => {
             {children}
         </todosContext.Provider>
     )
+}
+
+// context api
+
+export function useTodos() {
+    const todosContextValue = useContext(todosContext)
+    if(!todosContextValue) {
+        throw new Error("UseTodos used outside of Provider")
+    }
+    return todosContextValue;
 }
