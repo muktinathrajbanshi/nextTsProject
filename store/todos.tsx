@@ -1,10 +1,15 @@
 import { createContext, ReactNode, useState } from "react";
 
-type Todo = {
+export type Todo = {
     id: string;
     task:string;
     completed: boolean;
     createdAt: Date;
+}
+
+export type TodosContext = {
+    todos: Todo[];
+    handleAddTodo = (task: string) => void // call signature
 }
 
 export const todosContext = createContext(null);
