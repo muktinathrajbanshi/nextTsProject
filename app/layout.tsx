@@ -1,5 +1,4 @@
 
-
 import { TodosProvider } from "@/store/todos";
 
 export default function RootLayout({
