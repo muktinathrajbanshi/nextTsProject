@@ -1,3 +1,7 @@
+
+
+import { TodosProvider } from "@/store/todos";
+
 export default function RootLayout({
   children,
 }: {
@@ -6,7 +10,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <TodosProvider>
+          {children}
+        </TodosProvider>
       </body>
     </html>
   );

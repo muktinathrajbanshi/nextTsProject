@@ -1,3 +1,4 @@
+"use client";
 import { createContext, ReactNode, useContext, useState } from "react";
 
 export type Todo = {
@@ -14,7 +15,7 @@ export type TodosContext = {
 
 export const todosContext = createContext<TodosContext | null>(null);
 
-export const TodosProvider = (children: {children:ReactNode}) => {
+export const TodosProvider = ({children}: {children:ReactNode}) => {
 
     const [todos, setTodos] = useState<Todo[]>([]);
 
@@ -25,15 +26,16 @@ export const TodosProvider = (children: {children:ReactNode}) => {
                 {
                 id: Math.random().toString(),
                 task,
-                complete: false,
+                completed: false,
                 createdAt: new Date()
             },
             ...prev
         ]
         
         return newTodos;
-        }
-    )
+        });
+
+    }
 
     return (
         <todosContext.Provider value={{todos, handleAddTodo}}>
