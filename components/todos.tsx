@@ -17,7 +17,9 @@ const Todos = () => {
     {
         filterTodos.map((todo) => {
             return <li key={todo.id}>
-                    {todo.task}
+                    {
+                        <input type="checkbox" name="" id={`todo-${todo.id}`} checked={todo.completed} />
+                    }
                 </li>
         })
     }
