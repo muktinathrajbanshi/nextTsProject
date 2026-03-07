@@ -1,5 +1,7 @@
 "use client";
 
+import { useTodos } from "@/store/todos";
+
 
 
 const Todos = () => {
