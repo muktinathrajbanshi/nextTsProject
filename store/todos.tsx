@@ -12,6 +12,7 @@ export type TodosContext = {
     todos: Todo[];
     handleAddTodo: (task: string) => void; // call signature
     toggleTodoAsCompleted : (id: string) => void;
+    handleTodoDelete: (id:string) => void;
 }
 
 export const todosContext = createContext<TodosContext | null>(null);
@@ -52,8 +53,14 @@ export const TodosProvider = ({children}: {children:ReactNode}) => {
         })
     }
 
+    // if the task is deleted 
+    
+    const handleTodoDelete = (id: string) => {
+
+    }
+
     return (
-        <todosContext.Provider value={{todos, handleAddTodo, toggleTodoAsCompleted }}>
+        <todosContext.Provider value={{todos, handleAddTodo, toggleTodoAsCompleted, handleTodoDelete }}>
             {children}
         </todosContext.Provider>
     )
