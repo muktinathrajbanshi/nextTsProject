@@ -24,7 +24,7 @@ const Todos = () => {
 
                     {
                         todo.completed && (
-                            <button type="button" onClick={() => handleTodoDelete(todo.id)}></button>
+                            <button type="button" onClick={() => handleTodoDelete(todo.id)}>Delete</button>
                         )
                     }
 
