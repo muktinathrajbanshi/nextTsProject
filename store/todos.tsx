@@ -56,7 +56,9 @@ export const TodosProvider = ({children}: {children:ReactNode}) => {
     // if the task is deleted 
     
     const handleTodoDelete = (id: string) => {
-
+        setTodos((prev) => {
+            const newTodos = prev.filter((task) => task.id !== id)
+        })
     }
 
     return (
