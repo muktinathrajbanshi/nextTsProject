@@ -46,7 +46,9 @@ export const TodosProvider = ({children}: {children:ReactNode}) => {
                 if(task.id === id) {
                     return {...task, completed : !task.completed}
                 }
+                return task;
             })
+            return newTodos;
         })
     }
 
