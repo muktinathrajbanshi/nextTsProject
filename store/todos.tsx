@@ -11,6 +11,7 @@ export type Todo = {
 export type TodosContext = {
     todos: Todo[];
     handleAddTodo: (task: string) => void; // call signature
+    toggleTodoAsCompleted : (id: string) => void;
 }
 
 export const todosContext = createContext<TodosContext | null>(null);
@@ -35,6 +36,18 @@ export const TodosProvider = ({children}: {children:ReactNode}) => {
         return newTodos;
         });
 
+    }
+
+    // if the task is completed 
+
+    const toggleTodoAsCompleted = (id: string) => {
+        setTodos((prev) => {
+            const newTodos = prev.map((task) => {
+                if(task.id === id) {
+                    return {...task, completed : !task.completed}
+                }
+            })
+        })
     }
 
     return (

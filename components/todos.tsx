@@ -6,7 +6,7 @@ import { useTodos } from "@/store/todos";
 
 const Todos = () => {
 
-    const { todos } = useTodos()
+    const { todos, toggleTodoAsCompleted, handleTodoDelete } = useTodos()
     console.log(todos)
 
     let filterTodos =  todos;
@@ -20,7 +20,13 @@ const Todos = () => {
                     
                     <input type="checkbox" name="" id={`todo-${todo.id}`} checked={todo.completed} onChange={() => toggleTodoAsCompleted(todo.id)} />
                     
-                    <label htmlFor="{`todo-${todo.id}`}"></label>
+                    <label htmlFor="{`todo-${todo.id}`}">{todo.task}</label>
+
+                    {
+                        todo.completed && (
+                            <button type="button" onClick={() => handleTodoDelete(todo.id)}></button>
+                        )
+                    }
 
                 </li>
         })
