@@ -53,7 +53,7 @@ export const TodosProvider = ({children}: {children:ReactNode}) => {
     }
 
     return (
-        <todosContext.Provider value={{todos, handleAddTodo}}>
+        <todosContext.Provider value={{todos, handleAddTodo, toggleTodoAsCompleted }}>
             {children}
         </todosContext.Provider>
     )
