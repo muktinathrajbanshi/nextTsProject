@@ -1,10 +1,12 @@
+
 import { useSearchParams } from 'next/navigation'
 import React from 'react'
 
-const navbar = () => {
+const Navbar = () => {
 
   const searchParams =  useSearchParams();
   const todosFilter = searchParams.get("todos")
+  console.log("navbar " + todosFilter)
 
   return (
     <nav>
@@ -15,4 +17,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar

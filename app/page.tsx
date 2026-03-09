@@ -1,4 +1,5 @@
 import AddTodo from '@/components/add-todo';
+import Navbar from '@/components/navbar';
 import Todos from '@/components/todos';
 
 const page = () => {
