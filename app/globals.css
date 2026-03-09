@@ -266,4 +266,8 @@ li input:checked + label {
     padding: 10px 12px;
   }
 
+  form button {
+    padding: 10px;
+  }
+
 }
