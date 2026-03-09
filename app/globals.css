@@ -225,5 +225,29 @@ li input:checked + label {
     flex-direction: column;
   }
 
+  form input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  form button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  
+  li {
+    flex-direction: row;
+    padding: 10px 12px;
+  }
+
+  li label {
+    font-size: 14px;
+  }
+
+  li button {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
 
 }
