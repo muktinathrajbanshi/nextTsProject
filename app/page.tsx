@@ -5,6 +5,7 @@ const page = () => {
   return (
     <main>
       <h2>TODO NEXT + TYPESCRIPT</h2>
+      <Navbar />
       <AddTodo />
       <Todos />
     </main>
