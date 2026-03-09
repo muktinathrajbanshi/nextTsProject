@@ -177,3 +177,16 @@ li button {
   cursor: pointer;
   transition: 0.3s;
 }
+
+
+li button:hover {
+  background: var(--pink);
+  color: black;
+  box-shadow: 0 0 10px var(--pink);
+}
+
+
+li input:checked + label {
+  text-decoration: line-through;
+  color: #aaa;
+}
