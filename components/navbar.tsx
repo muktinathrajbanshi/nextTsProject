@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav>
-        <Link href="/"> All </Link>
+        <Link href="/" className={todosFilter === null ? "active" : ""}> All </Link>
         <Link href="/?todos=active"> Active </Link>
         <Link href="/?todos=completed"> Completed </Link>
     </nav>
