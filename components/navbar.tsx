@@ -1,6 +1,10 @@
+import { useSearchParams } from 'next/navigation'
 import React from 'react'
 
 const navbar = () => {
+
+  const searchParams =  useSearchParams();
+
   return (
     <nav>
         <link href="/"> All </link>
