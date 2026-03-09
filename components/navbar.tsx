@@ -4,7 +4,8 @@ const navbar = () => {
   return (
     <nav>
         <link href="/"> All </link>
-        <link href="/"> Active </link>
+        <link href="/?todos=active"> Active </link>
+        <link href="/"> All </link>
     </nav>
   )
 }
