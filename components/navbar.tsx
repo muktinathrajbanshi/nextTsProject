@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <nav>
         <Link href="/" className={todosFilter === null ? "active" : ""}> All </Link>
-        <Link href="/?todos=active" className={todosFilter === null ? "active" : ""}> Active </Link>
-        <Link href="/?todos=completed"> Completed </Link>
+        <Link href="/?todos=active" className={todosFilter === "active" ? "active" : ""}> Active </Link>
+        <Link href="/?todos=completed" className={todosFilter === "completed" ? "active" : ""}> Completed </Link>
     </nav>
   )
 }
