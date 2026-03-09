@@ -262,4 +262,8 @@ li input:checked + label {
     font-size: 12px;
   }
 
+  form input {
+    padding: 10px 12px;
+  }
+
 }
