@@ -1,6 +1,7 @@
 
-import { useSearchParams } from 'next/navigation'
-import React from 'react'
+"use client";
+
+import { useSearchParams } from 'next/navigation';
 
 const Navbar = () => {
 
