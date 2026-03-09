@@ -1,5 +1,6 @@
 
 "use client";
+import Link from 'next/link';
 
 import { useSearchParams } from 'next/navigation';
 
@@ -11,11 +12,11 @@ const Navbar = () => {
 
   return (
     <nav>
-        <link href="/"> All </link>
-        <link href="/?todos=active"> Active </link>
-        <link href="/?todos=completed"> Completed </link>
+        <Link href="/"> All </Link>
+        <Link href="/?todos=active"> Active </Link>
+        <Link href="/?todos=completed"> Completed </Link>
     </nav>
   )
 }
 
-export default Navbar
+export default Navbar;
