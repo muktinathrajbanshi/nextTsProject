@@ -58,6 +58,10 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.active {
+  color: red;
+}
+
 
 nav {
   display: flex;
