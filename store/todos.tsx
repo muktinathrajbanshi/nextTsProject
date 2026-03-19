@@ -20,8 +20,14 @@ export const todosContext = createContext<TodosContext | null>(null);
 export const TodosProvider = ({children}: {children:ReactNode}) => {
 
     const [todos, setTodos] = useState<Todo[]>(() => {
-        const newTodos = localStorage.getItem("todos") || "[]";
-        return JSON.parse(newTodos) as Todo[];
+        // const newTodos = localStorage.getItem("todos") || "[]";
+        // return JSON.parse(newTodos) as Todo[];
+
+        if (typeof window !== "undefined") {
+            const newTodos = localStorage.getItem("todos") || "[]";
+            return JSON.parse(newTodos);
+        }
+        return [];
     });
 
     const handleAddTodo = (task: string) => {
