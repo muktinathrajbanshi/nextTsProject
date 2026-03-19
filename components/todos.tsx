@@ -14,7 +14,11 @@ const Todos = () => {
 
     let filterTodos =  todos;
 
-    if(todosFilter === "active")
+    if(todosFilter === "active") {
+        filterTodos = filterTodos.filter((todo) => !todo.completed )
+    } else if(todosFilter === "completed") {
+        filterTodos = filterTodos.filter((todo) => todo.completed )
+    }
 
   return (
     <ul>
