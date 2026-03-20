@@ -36,3 +36,29 @@ main h2 {
 main h2 .icons {
   color: #68b984;
 }
+
+/* navbar styling  */
+
+nav {
+  width: 55rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid #ccc;
+}
+
+nav a {
+  font-size: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: #ccc;
+  border-bottom: 0.3rem solid transparent;
+}
+
+nav a:hover {
+  border-color: #3a3845;
+}
+
+nav a.active {
+  color: #000;
+  border-color: #68b984;
+}
