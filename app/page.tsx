@@ -8,7 +8,7 @@ import { RiTodoLine } from "react-icons/ri";
 const page = () => {
   return (
     <main>
-      <h2><RiTodoLine /> TODO NEXT + TYPESCRIPT <RiTodoLine /></h2>
+      <h2><RiTodoLine className="icons" /> TODO NEXT + TYPESCRIPT <RiTodoLine className="icons" /></h2>
       <Navbar />
       <AddTodo />
       <Todos />

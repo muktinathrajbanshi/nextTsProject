@@ -6,3 +6,33 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 10rem;
+}
+
+main h2 {
+  font-size: 3rem;
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 4.8rem;
+}
+
+main h2 .icons {
+  color: #68b984;
+}
