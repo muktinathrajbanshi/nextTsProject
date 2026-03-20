@@ -62,3 +62,20 @@ nav a.active {
   color: #000;
   border-color: #68b984;
 }
+
+/* form styling  */
+
+form input {
+  border: 0.1rem solid #ccc;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  width: 45rem;
+  margin: 4rem 0;
+  padding: 0.6rem 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.06rem;
+  font-weight: bold;
+}
