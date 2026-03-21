@@ -375,3 +375,32 @@ ul li button:active {
     width: 70%;
   }
 }
+
+/* ===============================
+   📱 640px (Small Tablet)
+================================= */
+@media (max-width: 640px) {
+  html {
+    font-size: 54%;
+  }
+
+  nav {
+    width: 95%;
+  }
+
+  form input {
+    width: 95%;
+  }
+
+  form button {
+    width: 80%;
+  }
+
+  label {
+    width: 95%;
+  }
+
+  ul li {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
