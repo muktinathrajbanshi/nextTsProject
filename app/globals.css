@@ -12,6 +12,13 @@ html {
   font-size: 62.5%;
 }
 
+nav,
+form input,
+label,
+ul li {
+  max-width: 100%;
+}
+
 /* 🌌 ANIMATED BACKGROUND */
 body {
   min-height: 100vh;
@@ -277,4 +284,29 @@ ul li button:hover {
 
 ul li button:active {
   transform: scale(0.95);
+}
+
+/* ===============================
+   💻 1200px (Large screens)
+================================= */
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  nav {
+    width: 50rem;
+  }
+
+  form input {
+    width: 35rem;
+  }
+
+  label {
+    width: 40rem;
+  }
+
+  ul li {
+    width: 45rem;
+  }
 }
