@@ -310,3 +310,40 @@ ul li button:active {
     width: 45rem;
   }
 }
+
+/* ===============================
+   💻 980px (Laptop / Tablet)
+================================= */
+@media (max-width: 980px) {
+  html {
+    font-size: 58%;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  form input {
+    width: 90%;
+  }
+
+  form button {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  label {
+    width: 90%;
+  }
+
+  ul li {
+    width: 95%;
+  }
+}
