@@ -181,3 +181,15 @@ ul li input[type="checkbox"]:checked + label {
   text-decoration: line-through;
   color: #d14d72;
 }
+
+ul li button {
+  padding: 0.6rem 1rem;
+  width: 7rem;
+  background-color: #d14d72;
+  color: #fff9f9;
+  border: none;
+  /* display: inline-block; */
+  cursor: pointer;
+  justify-self: center;
+  letter-spacing: 0.1rem;
+}
