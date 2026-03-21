@@ -159,3 +159,12 @@ label:hover {
   transform: scale(1.02);
   background: rgba(255, 255, 255, 0.2);
 }
+
+ul li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 50rem;
+  min-height: 6rem;
+  border-bottom: 0.1rem solid #ccc;
+}
