@@ -347,3 +347,31 @@ ul li button:active {
     width: 95%;
   }
 }
+
+/* ===============================
+   📱 720px (Tablet)
+================================= */
+@media (max-width: 720px) {
+  html {
+    font-size: 56%;
+  }
+
+  main h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+  }
+
+  form button {
+    width: 70%;
+  }
+}
