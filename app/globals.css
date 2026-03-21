@@ -168,3 +168,16 @@ ul li {
   min-height: 6rem;
   border-bottom: 0.1rem solid #ccc;
 }
+
+ul li:first-child {
+  border-top: 0.1rem solid #ccc;
+}
+
+ul li:hover {
+  background-color: #fef2f2;
+}
+
+ul li input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #d14d72;
+}
