@@ -29,7 +29,7 @@ const Todos = () => {
                     
                     <input type="checkbox" name="" id={`todo-${todo.id}`} checked={todo.completed} onChange={() => toggleTodoAsCompleted(todo.id)} />
                     
-                    <label htmlFor="{`todo-${todo.id}`}">{todo.task}</label>
+                    <label htmlFor={`todo-${todo.id}`}>{todo.task}</label>
 
                     {
                         todo.completed && (
