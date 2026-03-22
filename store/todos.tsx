@@ -38,11 +38,14 @@ export const TodosProvider = ({children}: {children:ReactNode}) => {
                 id: Math.random().toString(),
                 task,
                 completed: false,
-                createdAt: new Date()
+                createdAt: new Date(),
             },
             ...prev
-        ]
-        localStorage.setItem("todos", JSON.stringify(newTodos))
+        ];
+
+        if (typeof window !== "undefined") {
+            localStorage.setItem("todos", JSON.stringify(newTodos));
+        }
         return newTodos;
         });
 
@@ -54,11 +57,14 @@ export const TodosProvider = ({children}: {children:ReactNode}) => {
         setTodos((prev) => {
             const newTodos = prev.map((task) => {
                 if(task.id === id) {
-                    return {...task, completed : !task.completed}
+                    return {...task, completed : !task.completed};
                 }
                 return task;
-            })
-            localStorage.setItem("todos", JSON.stringify(newTodos))
+            });
+
+            if (typeof window !== "undefined") {
+                localStorage.setItem("todos", JSON.stringify(newTodos));
+            }
             return newTodos;
         })
     }
@@ -67,8 +73,11 @@ export const TodosProvider = ({children}: {children:ReactNode}) => {
     
     const handleTodoDelete = (id: string) => {
         setTodos((prev) => {
-            const newTodos = prev.filter((task) => task.id !== id)
-            localStorage.setItem("todos", JSON.stringify(newTodos))
+            const newTodos = prev.filter((task) => task.id !== id);
+
+            if (typeof window !== "undefined") {
+                localStorage.setItem("todos", JSON.stringify(newTodos));
+            }
             return newTodos;
         })
     }
